@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                https://github.com/Shruthi786/ecommerce-app.git
+                git 'https://github.com/Shruthi786/ecommerce-app.git'
             }
         }
 

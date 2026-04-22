@@ -5,12 +5,12 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/products")
+    axios.get("http://13.203.161.46:5000/products")
       .then(res => setProducts(res.data));
   }, []);
 
   const addToCart = (product) => {
-    axios.post("http://localhost:5000/cart", product)
+    axios.post("http://13.203.161.46:5000/cart", product)
       .then(res => alert(res.data.message));
   };
 
